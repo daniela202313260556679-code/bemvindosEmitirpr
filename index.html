@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>HelmetPro | Loja de Capacetes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #111;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 26px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ff3c00;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1604668915840-580c16c9f8f4') center/cover no-repeat;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .hero-content {
+            background: rgba(0,0,0,0.6);
+            padding: 30px;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+
+        .hero-content h2 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        .hero-content button {
+            padding: 12px 25px;
+            border: none;
+            background: #ff3c00;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .hero-content button:hover {
+            background: #e63500;
+        }
+
+        .produtos {
+            padding: 60px 40px;
+        }
+
+        .produtos h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #ff3c00;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: auto;
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HelmetPro</h1>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Produtos</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Proteção e Estilo em Cada Aventura</h2>
+        <p>Capacetes premium para motociclistas que valorizam segurança, conforto e design.</p>
+        <button>Ver Produtos</button>
+    </div>
+</section>
+
+<section class="produtos">
+    <h2>Capacetes em Destaque</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1621600411688-4be93cd68504" alt="Capacete Esportivo">
+            <div class="card-content">
+                <h3>Capacete Esportivo</h3>
+                <p class="price">R$ 899,00</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1614963326505-843868e1d83a" alt="Capacete Urbano">
+            <div class="card-content">
+                <h3>Capacete Urbano</h3>
+                <p class="price">R$ 649,00</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433" alt="Capacete Premium">
+            <div class="card-content">
+                <h3>Capacete Premium</h3>
+                <p class="price">R$ 1.299,00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 HelmetPro - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
 
